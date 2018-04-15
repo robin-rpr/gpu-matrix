@@ -8,6 +8,8 @@
 
 A GPU Accelerated Machine-Learning Matrix manipulation and computation library.
 
+> **Note:** If you get lost, the [API Documentation](https://mljs.github.io/matrix/) will save you.
+
 ## Installation
 
 ```
@@ -36,8 +38,6 @@ const { Matrix } = require('matrixjs');
 
 let matrix = Matrix.ones(5, 5);
 ```
-
-## [API Documentation](https://mljs.github.io/matrix/)
 
 ## Examples 
 
