@@ -1,7 +1,7 @@
 {
-  "name": "matrix.js",
+  "name": "gpu-matrix",
   "version": "5.0.1",
-  "description": "Machine Learning Matrix manipulation and computation library",
+  "description": "A GPU Accelerated Machine Learning Matrix manipulation and computation library",
   "main": "matrix.js",
   "module": "src/index.js",
   "files": [
@@ -19,10 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robin-rpr/matrix.js.git"
+    "url": "https://github.com/robin-rpr/gpu-matrix.git"
   },
   "keywords": [
     "matrix",
+    "gpu",
+    "acceleration",
     "decomposition",
     "SVD",
     "singular",
@@ -41,12 +43,12 @@
   "author": "Robin Rpr.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robin-rpr/matrix/issues"
+    "url": "https://github.com/robin-rpr/gpu-matrix/issues"
   },
   "engines": {
     "node": ">=2.0.0"
   },
-  "homepage": "https://github.com/robin-rpr/matrix",
+  "homepage": "https://github.com/robin-rpr/gpu-matrix",
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "benchmark": "^2.1.0",

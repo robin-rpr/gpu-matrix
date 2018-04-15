@@ -1,4 +1,4 @@
-# ml-matrix
+# gpu-matrix
 
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][travis-url]
@@ -9,14 +9,14 @@ Matrix manipulation and computation library.
 
 ## Installation
 
-`$ npm install --save ml-matrix`
+`$ npm install gpu-matrix --save`
 
 ## Usage
 
 ### As an ES module
 
 ```js
-import Matrix from 'ml-matrix';
+import Matrix from 'matrixjs';
 
 const matrix = Matrix.ones(5, 5);
 ```
@@ -24,7 +24,7 @@ const matrix = Matrix.ones(5, 5);
 ### As a CommonJS module
 
 ```js
-const {Matrix} = require('ml-matrix');
+const { Matrix } = require('matrixjs');
 
 const matrix = Matrix.ones(5, 5);
 ```
@@ -36,7 +36,7 @@ const matrix = Matrix.ones(5, 5);
 ### Standard operations
 
 ``` js
-const {Matrix} = require('ml-matrix');
+const { Matrix } = require('mmatrixjs');
 
 var A = new Matrix([[1, 1], [2, 2]]);
 var B = new Matrix([[3, 3], [1, 1]]);
@@ -191,7 +191,7 @@ var dependencies = linearDependencies(A); // dependencies is a matrix with the d
   [MIT](./LICENSE)
 
 [npm-image]: https://img.shields.io/npm/v/ml-matrix.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/ml-matrix
+[npm-url]: https://npmjs.org/package/matrixjs
 [travis-image]: https://img.shields.io/travis/mljs/matrix/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/mljs/matrix
 [codecov-image]: https://img.shields.io/codecov/c/github/mljs/matrix.svg?style=flat-square
