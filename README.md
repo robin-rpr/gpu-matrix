@@ -1,4 +1,4 @@
-# gpu-matrix
+![GPU ![Matrix](https://github.com/robin-rpr/gpu-matrix)](https://raw.githubusercontent.com/robin-rpr/gpu-matrix/master/logo.png)
 
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][travis-url]
