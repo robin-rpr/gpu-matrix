@@ -1,4 +1,4 @@
-<img src="https://svgshare.com/i/6F6.svg" width="430"> 
+<img src="https://svgshare.com/i/6EN.svg" width="430"> 
 
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][travis-url]
