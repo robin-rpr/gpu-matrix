@@ -1,3 +1,13 @@
+<a name="5.0.2"></a>
+## [5.0.2](https://github.com/mljs/matrix/compare/v5.0.0...v5.0.2) (2018-04-15)
+
+
+### Code Refactoring
+
+* Added minValue and decimal to RandInt-Matrix. ([4b72211](https://github.com/mljs/matrix/commit/4b72211))
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/mljs/matrix/compare/v5.0.0...v5.0.1) (2017-07-28)
 
