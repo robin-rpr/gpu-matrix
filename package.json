@@ -1,7 +1,7 @@
 {
-  "name": "ml-matrix",
+  "name": "matrix.js",
   "version": "5.0.1",
-  "description": "Matrix manipulation and computation library",
+  "description": "Machine Learning Matrix manipulation and computation library",
   "main": "matrix.js",
   "module": "src/index.js",
   "files": [
@@ -38,15 +38,15 @@
     "machine",
     "learning"
   ],
-  "author": "Michaël Zasso",
+  "author": "Robin Rpr.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mljs/matrix/issues"
+    "url": "https://github.com/robin-rpr/matrix/issues"
   },
   "engines": {
     "node": ">=2.0.0"
   },
-  "homepage": "https://github.com/mljs/matrix",
+  "homepage": "https://github.com/robin-rpr/matrix",
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "benchmark": "^2.1.0",
