@@ -4,7 +4,7 @@
 
 ### Code Refactoring
 
-* Added minValue and decimal to RandInt-Matrix. ([4b72211](https://github.com/mljs/matrix/commit/4b72211))
+* Added minValue and decimal to RandInt-Matrix. ([4ffb49e](https://github.com/mljs/matrix/commit/4ffb49e))
 
 
 
