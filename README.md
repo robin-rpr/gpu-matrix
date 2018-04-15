@@ -1,8 +1,7 @@
-<img src="https://svgshare.com/i/6GS.svg" width="430"> 
+<img src="https://svgshare.com/i/6F6.svg" width="430"> 
 
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][travis-url]
-  [![Test coverage][codecov-image]][codecov-url]
   [![npm download][download-image]][download-url]
   [![GitHub license][licence-image]](https://github.com/robin-rpr/gpu-matrix/blob/master/LICENSE)
 
@@ -211,12 +210,10 @@ var dependencies = linearDependencies(A); // dependencies is a matrix with the d
 
   [MIT](./LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/ml-matrix.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/matrixjs
-[travis-image]: https://img.shields.io/travis/mljs/matrix/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/mljs/matrix
-[codecov-image]: https://img.shields.io/codecov/c/github/mljs/matrix.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/mljs/matrix
-[download-image]: https://img.shields.io/npm/dm/ml-matrix.svg?style=flat-square
-[download-url]: https://npmjs.org/package/ml-matrix
+[npm-image]: https://img.shields.io/npm/v/gpu-matrix.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/gpu-matrix
+[travis-image]: https://img.shields.io/travis/robin-rpr/gpu-matrix/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/robin-rpr/gpu-matrix
+[download-image]: https://img.shields.io/npm/dm/gpu-matrix.svg?style=flat-square
+[download-url]: https://npmjs.org/package/gpu-matrix
 [licence-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
