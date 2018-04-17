@@ -57,7 +57,6 @@ function toggleStepSibling() {
   var klass = 'display-none';
   if (stepSibling.classList.contains(klass)) {
     stepSibling.classList.remove(klass);
-    stepSibling.innerHTML = '▾';
   } else {
     stepSibling.classList.add(klass);
     stepSibling.innerHTML = '▸';
@@ -75,10 +74,12 @@ function toggleSibling() {
   var klass = 'display-none';
   if (stepSibling.classList.contains(klass)) {
     stepSibling.classList.remove(klass);
-    icon.innerHTML = '▾';
+    icon.classList.remove('dripicons-chevron-right');
+    icon.classList.add('dripicons-chevron-down');
   } else {
     stepSibling.classList.add(klass);
-    icon.innerHTML = '▸';
+      icon.classList.remove('dripicons-chevron-down');
+      icon.classList.add('dripicons-chevron-right');
   }
 }
 
