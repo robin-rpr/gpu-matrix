@@ -15,6 +15,10 @@ import MatrixColumnSelectionView from './views/columnSelection';
 import MatrixColumnView from './views/column';
 import MatrixFlipRowView from './views/flipRow';
 import MatrixFlipColumnView from './views/flipColumn';
+import GPU from 'gpu.js';
+
+// Initialize new GPU
+const gpu = new GPU();
 
 export default function AbstractMatrix(superCtor) {
     if (superCtor === undefined) superCtor = Object;
@@ -139,7 +143,7 @@ export default function AbstractMatrix(superCtor) {
         static randInt(rows, columns, minValue, maxValue, decimal, rng) {
             if (maxValue === undefined) maxValue = 1000;
             if (minValue === undefined) minValue = 0;
-            if (decimal === undefined)  decimal = 5;
+            if (decimal === undefined) decimal = 5;
             if (rng === undefined) rng = Math.random;
 
             let matrix = this.empty(rows, columns);
@@ -991,6 +995,13 @@ export default function AbstractMatrix(superCtor) {
          * @return {Matrix}
          */
         mmul(other) {
+
+            // Create GPU kernel
+            gpu.createKernel(() => {
+                return this.thread.x;
+            }).setOutput([100]);
+
+
             other = this.constructor.checkMatrix(other);
             if (this.columns !== other.rows) {
                 // eslint-disable-next-line no-console
@@ -1011,7 +1022,7 @@ export default function AbstractMatrix(superCtor) {
 
                 for (let i = 0; i < m; i++) {
                     let s = 0;
-                    for (k = 0; k < n; k++) {
+                    for (let k = 0; k < n; k++) {
                         s += this.get(i, k) * Bcolj[k];
                     }
 
@@ -1224,6 +1235,7 @@ export default function AbstractMatrix(superCtor) {
                 resultat = resultat.setSubMatrix(c22, c11.rows, c11.columns);
                 return resultat.subMatrix(0, rows - 1, 0, cols - 1);
             }
+
             return blockMult(x, y, r, c);
         }
 
@@ -1563,11 +1575,11 @@ export default function AbstractMatrix(superCtor) {
 
 
         /**
-        * Calculates and returns the determinant of a matrix as a Number
-        * @example
-        *   new Matrix([[1,2,3], [4,5,6]]).det()
-        * @return {number}
-        */
+         * Calculates and returns the determinant of a matrix as a Number
+         * @example
+         *   new Matrix([[1,2,3], [4,5,6]]).det()
+         * @return {number}
+         */
         det() {
             if (this.isSquare()) {
                 let a, b, c, d;
@@ -1843,7 +1855,10 @@ export default function AbstractMatrix(superCtor) {
                 method: methodWithArg[0],
                 args: args
             }));
-            let staticMethWithArgs = eval2(fillTemplateFunction(staticMethodWithArgs, {name: methodWithArg[2], args: args}));
+            let staticMethWithArgs = eval2(fillTemplateFunction(staticMethodWithArgs, {
+                name: methodWithArg[2],
+                args: args
+            }));
             for (i = 2; i < methodWithArg.length; i++) {
                 Matrix.prototype[methodWithArg[i]] = inplaceMethWithArgs;
                 Matrix[methodWithArg[i]] = staticMethWithArgs;

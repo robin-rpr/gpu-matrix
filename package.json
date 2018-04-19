@@ -66,6 +66,7 @@
     "rollup": "^0.48.2"
   },
   "dependencies": {
+    "gpu.js": "^1.2.0",
     "ml-array-rescale": "^1.1.0"
   }
 }
